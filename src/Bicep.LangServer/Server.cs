@@ -72,6 +72,7 @@ namespace Bicep.LanguageServer
                     .WithHandler<BicepSemanticTokensHandler>()
                     .WithHandler<BicepTelemetryHandler>()
                     .WithHandler<BicepBuildCommandHandler>()
+                    .WithHandler<BicepRegistryCacheHandler>()
                     .WithServices(services => RegisterServices(creationOptions, services));
 
                 onOptionsFunc(options);
